@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+<head>
+<title>Edit Record</title>
+</head>
+<body>
+	<h2>Edit Student detail</h2>
+	
+		<h:form>
+			<h:outputText value="Enter Name"></h:outputText>	&nbsp;		
+			<h:inputText id="txtName" value="#{obj.item.name}" required="true" requiredMessage="Name is mandatory"/>
+			<h:message for="txtName"  style="color: red"></h:message>
+			 <br/>
+			
+			<h:outputText value="Enter Email"></h:outputText>	&nbsp;		
+			<h:inputText id="txtEmail" value="#{obj.item.email}" required="true" requiredMessage="Email is mandatory"/>
+			<h:message for="txtEmail"  style="color: red"></h:message>
+			 <br/>
+			
+			<h:outputText value="Enter Gender"></h:outputText>	&nbsp;		
+			<h:inputText id="txtGender" value="#{obj.item.gender}" required="true" requiredMessage="Gender is mandatory"/>
+			<h:message for="txtGender"  style="color: red"></h:message>
+			 <br/>
+			
+			<p>
+				<h:commandButton value="Update"  action="#{obj.update(obj.item)}" />
+			</p>
+		</h:form>
+
+</body>
+</html>
