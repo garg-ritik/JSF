@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8' ?>  
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets">
+<head>
+<title>Home</title>
+</head>
+<body>
+
+	<table align="top" width="100%" style="height: 70px ; background-color: blue">
+		<td align="center">
+			<ui:include src="header.xhtml"></ui:include>
+		</td>
+	</table>
+	
+	<table>
+		<td>
+			<ui:include src="sidebar.xhtml"></ui:include>
+		</td>
+		<td align="center" valign="middle">
+			<ui:insert name="content"></ui:insert>
+		</td>
+	</table>
+
+	<table align="top" width="100%" style="height: 40px ; background-color: blue">
+		<td align="center">
+			<ui:include src="footer.xhtml"></ui:include>
+		</td>
+	</table>
+
+</body>
+</html>

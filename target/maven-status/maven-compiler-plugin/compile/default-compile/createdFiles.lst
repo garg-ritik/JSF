@@ -1,6 +1,8 @@
 connection\ConnectionDB.class
 ejb\Student.class
+ejb\HelloBean.class
 ejb\JsfExampleBean.class
 ejb\LoginBean.class
 ejb\JsfServiceImpl.class
 ejb\JsfServiceRemote.class
+ejb\HelloComponent.class

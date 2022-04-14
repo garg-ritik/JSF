@@ -54,7 +54,7 @@ public class LoginBean {
 		getDbData();
 		if(username.equals(dbusername)) {
 			if(password.equals(dbpassword)) {
-				return "page1";
+				return "home";
 			}else {
 				return "loginfail";
 			}
